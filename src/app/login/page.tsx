@@ -1,4 +1,4 @@
-import { login, signup } from "./actions";
+import { login, signup } from "../api/auth/auth";
 import { redirect } from "next/navigation";
 import { supabaseServerClient } from "@/utility/supabase/supabaseServer";
 
