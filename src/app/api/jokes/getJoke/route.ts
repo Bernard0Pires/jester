@@ -9,7 +9,6 @@ export async function GET(req: Request){
 
     if(categorys && categorys.trim() !== ''){
         let requiredCategorys : string[] = categorys.split(',');
-        console.log(requiredCategorys)
         requiredCategorys.forEach((category, index)=>{
             ApiUrl += category
             
@@ -17,7 +16,6 @@ export async function GET(req: Request){
                 ApiUrl += ","
             }
         })
-        console.log(ApiUrl)
     } else {
         ApiUrl += "Any"
     }

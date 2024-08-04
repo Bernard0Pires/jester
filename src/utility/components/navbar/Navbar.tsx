@@ -1,7 +1,7 @@
 import { signout } from "@/app/api/auth/auth";
 import { supabaseServerClient } from "@/utility/supabase/supabaseServer";
 import Link from "next/link";
-import Button from "@/utility/components/buttons/button";
+import Button from "@/utility/components/buttons/auth-button";
 import NavLink from "@/utility/components/navbar/navbar-menu/navLink";
 
 export default async function Navbar() {
